@@ -1,0 +1,1 @@
+{"version":3,"file":"app.css","sources":["app.scss","_variable.scss","core.scss"],"sourcesContent":["@import \"_variable\";\n@import \"core\";","$menu-height: 51px;",".fixed-container {\n  margin-top: $menu-height;\n}"],"mappings":"AEAA,AAAA,gBAAgB,AAAC,CACf,UAAU,CDDE,IAAI,CCEjB","names":[]}
