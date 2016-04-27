@@ -16,14 +16,12 @@
             <div class="home-lists">
                 <article class="item" ng-repeat="article in articles">
                     <a href="#/{{article.slug}}" class="title">
-                        <h1>{{article.title}} <small>Fathur</small></h1>
+                        <h1>{{article.title}} <small>{{article.author}}</small></h1>
                     </a>
 
-                    <div>
-                        <p>Lorem ipsum dolor sit amet, dicunt sanctus eam ne. Ne apeirian accusata recteque quo, an assum vitae ignota eos. Quo et ignota labitur quaerendum. Sea ad malorum urbanitas.</p>
+                    <div ng-bind-html="article.excerpt"></div>
 
-                        <p>Qui assum admodum ea, aliquid molestie apeirian an vis. Per at tollit molestie atomorum, nec ut nemore intellegebat, duo an voluptaria consequuntur. Nec detraxit honestatis ad, vis sonet efficiantur te. Quis utamur ea eam. Veniam alterum facilisi an his, dicam platonem petentium ei has. An vis nibh offendit, adolescens cotidieque sit id, et mel ridens dolorum lobortis. Ius vocent ceteros no.</p>
-                    </div>
+                    <a href="#/{{article.slug}}" class="read-more">Selengkapnya...</a>
                 </article>
             </div>
         </div>

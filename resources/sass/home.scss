@@ -43,21 +43,50 @@
     }
   }
 
-  a.title  {
-    color: $green;
-    font-family: 'Fira Sans', sans-serif;
-    font-weight: 300;
+  a  {
 
-    &:hover {
-      text-decoration: none;
-      color: darken($green, 15%);
+    color: $green;
+
+    &.title {
+      color: $green;
+      font-family: 'Fira Sans', sans-serif;
+      font-weight: 300;
+
+      &:hover {
+        text-decoration: none;
+        color: darken($green, 15%);
+      }
+
+      & > h1 small {
+        color: lighten($green, 20%);
+        font-size: 20px;
+        font-family: 'Fira Sans', sans-serif;
+
+      }
+    }
+  }
+
+  article {
+
+    padding-bottom: 20px;
+
+    &:not(:last-child) {
+
+
+      &:after {
+
+        content: "";
+        display: block;
+        width: 200px;
+        height: 2px;
+        background-color: lighten(#000, 70%);
+        margin: 0 auto;
+      }
     }
 
-    & > h1 small {
-      color: lighten($green, 20%);
-      font-size: 20px;
-      font-family: 'Fira Sans', sans-serif;
-
+    .read-more {
+      margin-bottom: 20px;
+      display: inline-block;
     }
   }
 }

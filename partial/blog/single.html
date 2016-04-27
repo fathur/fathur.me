@@ -5,8 +5,8 @@
         </div>
         <div class="text">
             <h1>{{article.title}}</h1>
-            <div class="author">Fathur Rohman</div>
-            <div class="date">19 Oktober 2015</div>
+            <div class="author">{{article.author}}</div>
+            <div class="date">{{article.date}}</div>
         </div>
     </div>
 </div>
@@ -15,76 +15,15 @@
 
     <div class="row single-article">
         <div class="col-md-12">
-            <div>
-
-                <h2>h2. Bootstrap heading <small>Secondary text</small></h2>
-                <h3>h3. Bootstrap heading <small>Secondary text</small></h3>
-                <h4>h4. Bootstrap heading <small>Secondary text</small></h4>
-                <h5>h5. Bootstrap heading <small>Secondary text</small></h5>
-                <h6>h6. Bootstrap heading <small>Secondary text</small></h6>
-
-                <p class="lead">{{article.content}}</p>
-                <p class="text-left">{{article.content}}</p>
-                <p class="text-center">{{article.content}}</p>
-                <p class="text-right">{{article.content}}</p>
-                <p class="text-justify">{{article.content}}</p>
-
-                <p>{{article.content}}</p>
-
-                <p>You can use the mark tag to <mark>highlight</mark> text.</p>
-                <p><del>This line of text is meant to be treated as deleted text.</del></p>
-                <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
-                <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
-                <p><u>This line of text will render as underlined</u></p>
-                <p><small>This line of text is meant to be treated as fine print.</small></p>
-                <p><strong>rendered as bold text</strong></p>
-                <p><em>rendered as italicized text</em></p>
-
-                <blockquote>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                </blockquote>
-
-                <blockquote class="blockquote-reverse">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                </blockquote>
-
-                <blockquote>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                    <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                </blockquote>
-
-                <p>For example, <code>&lt;section&gt;</code> should be wrapped as inline.</p>
-
-                <p>To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>
-                    To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd></p>
-
-                <pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
-
-                <p><samp>This text is meant to be treated as sample output from a computer program.</samp></p>
-
-                <span data-gist-id="aa841f6faaab8acbf345"
-                      data-gist-file="1.home.php"
-                      data-gist-hide-footer="true"></span>
-
-                <figure class="figure">
-                    <img src="http://lorempixel.com/1000/1000/sports/" class="img-responsive" alt="Responsive image">
-                    <figcaption class="figure-caption">A caption for the above image.</figcaption>
-                </figure>
+            <div ng-bind-html="article.content">
             </div>
-            <div class="social-media">
-                <div class="btn-group" role="group" aria-label="Share">
-                    <button type="button" class="btn btn-sm btn-success">
-                        <i class="fa fa-facebook"></i>
-                    </button>
-                    <button type="button" class="btn btn-sm btn-success">
-                        <i class="fa fa-twitter"></i>
-                    </button>
-                    <button type="button" class="btn btn-sm btn-success">
-                        <i class="fa fa-google-plus"></i>
-                    </button>
-                    <button type="button" class="btn btn-sm btn-success">
-                        <i class="fa fa-linkedin"></i>
-                    </button>
+
+            <div class='social-media'>
+                <div class='btn-group' role='group' aria-label='Share'>
+                    <button type='button' class='btn btn-sm btn-success'><i class='fa fa-facebook'></i></button>
+                    <button type='button' class='btn btn-sm btn-success'><i class='fa fa-twitter'></i></button>
+                    <button type='button' class='btn btn-sm btn-success'><i class='fa fa-google-plus'></i></button>
+                    <button type='button' class='btn btn-sm btn-success'><i class='fa fa-linkedin'></i></button>
                 </div>
             </div>
         </div>
