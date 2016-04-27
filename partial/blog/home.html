@@ -1,19 +1,24 @@
 <div class="container-fluid">
-    <div class="row">
-        <img src="http://freebigpictures.com/wp-content/uploads/shady-forest.jpg" alt="Musafir Rohman" class="img-responsive">
+    <div class="row home img-header">
+        <div class="image">
+            <img src="http://freebigpictures.com/wp-content/uploads/shady-forest.jpg" alt="Musafir Rohman" class="img-responsive">
+        </div>
+        <div class="text">
+            <h1>Musafir</h1>
+            <div class="subtitle">Jelajahi pelosok, karena kota membosankan</div>
+        </div>
     </div>
 </div>
 
 <div class="container">
-    <div class="row">
+    <div class="row home">
         <div class="col-md-12">
             <div class="home-lists">
                 <article class="item" ng-repeat="article in articles">
-                    <a href="#/{{article.slug}}">
-                        <h2>{{article.title}}</h2>
+                    <a href="#/{{article.slug}}" class="title">
+                        <h1>{{article.title}} <small>Fathur</small></h1>
                     </a>
 
-                    <div class="date small italic">10 Feb 2019, by Fathur</div>
                     <div>
                         <p>Lorem ipsum dolor sit amet, dicunt sanctus eam ne. Ne apeirian accusata recteque quo, an assum vitae ignota eos. Quo et ignota labitur quaerendum. Sea ad malorum urbanitas.</p>
 
