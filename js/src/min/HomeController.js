@@ -3,9 +3,13 @@ var HomeFrontCtrl;
 HomeFrontCtrl = function($scope) {
   $scope.articles = [
     {
-      title: 'Satu'
+      slug: 'artikel-pertama',
+      title: 'Satu',
+      content: 'yee'
     }, {
-      title: 'Dua'
+      slug: 'artikel-kedua',
+      title: 'Dua',
+      content: 'horeee'
     }
   ];
 };

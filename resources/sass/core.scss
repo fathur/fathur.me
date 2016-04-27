@@ -1,3 +1,40 @@
-.fixed-container {
-  margin-top: $menu-height;
+p {
+  font-family: 'Roboto', sans-serif;;
+}
+
+.navbar-brand {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+@media (min-width: 1200px) {
+  .fixed-container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .fixed-container {
+    width: 750px;
+  }
+}
+
+
+figure {
+  &.figure {
+    border: 1px solid darken(#FFF, 30%);
+    padding: 3px;
+    & > img {
+
+    }
+
+    & > figcaption {
+      &.figure-caption {
+        font-size: 13px;
+        padding: 5px 3px 0 3px;
+        font-style: italic;
+      }
+    }
+  }
 }
