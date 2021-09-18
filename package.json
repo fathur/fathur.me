@@ -62,7 +62,7 @@
     "typescript": "^4.4.3"
   },
   "lint-staged": {
-    "*.{js,ts,tsx}": "eslint -c .eslintrc.json --ignore-path .eslintignore --cache --fix",
+    "*.{js,ts,tsx}": "eslint -c .eslintrc.json --ignore-path .eslintignore --cache --fix ./src/pages/*",
     "*.{js,jsx,ts,tsx,scss,css,md}": "prettier -c .prettierrc --write './**/*.{js,jsx,ts,tsx,scss,css,md}'"
   }
 }
