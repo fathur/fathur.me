@@ -1,11 +1,26 @@
+const colors = require('tailwindcss/colors');
+
 module.exports = {
-  purge: ['./src/pages/**/*.{js,jsx,ts,tsx}'],
-  darkMode: false, // or 'media' or 'class'
+  // mode: 'jit',
+  purge: [
+    './src/pages/**/*.{js,ts,jsx,tsx}',
+    './src/components/**/*.{js,ts,jsx,tsx}',
+  ],
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        emerald: colors.emerald,
+        teal: colors.teal,
+      },
+      fontFamily: {
+        raleway: ['Raleway', 'sans-serif'],
+        sans: ['Rubik', 'sans-serif'],
+      },
+    },
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require('nightwind')],
 };
