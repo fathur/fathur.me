@@ -2,16 +2,6 @@ import React, { useEffect, useState } from 'react';
 import _ from 'lodash';
 import { H2, Paragraph } from '../components/_content/typography';
 import Link from 'next/link';
-const detail = {
-  name: 'Fathur',
-  a: 1,
-  b: 2,
-  c: 3,
-  d: 4,
-  e: 5,
-  f: 6,
-  g: 7,
-};
 
 const Bio: React.FC = () => {
   return (
@@ -19,7 +9,7 @@ const Bio: React.FC = () => {
       <div className="hidden md:block">
         <img
           className="rounded-full border-2 border-gray-400 mx-auto"
-          src="https://media-exp1.licdn.com/dms/image/C4E03AQGJp9I560_DZA/profile-displayphoto-shrink_800_800/0/1516355962739?e=1637798400&v=beta&t=ecc1uTPyHwSzfGJwV-vn8DWbu8HHuJqB9ij0StH6dLc"
+          src="/fathur.jpeg"
           alt="Fathur"
         />
       </div>
