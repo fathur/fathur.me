@@ -45,7 +45,8 @@ const Bio: React.FC = () => {
               <dd>Fathur</dd>
 
               <dt className={'font-semibold'}>Email:</dt>
-              <dd>hi@fathur.me</dd>
+              {/*<dd>hi@fathur.me</dd>*/}
+              <dd>hi.fathur.rohman@gmail.com</dd>
             </dl>
           </div>
 

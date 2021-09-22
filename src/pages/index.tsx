@@ -53,14 +53,14 @@ const Home: NextPage = () => {
         </Container>
       </Section>
 
-      <Section>
+      <Section className="bg-white">
         <Container>
           <Bio />
         </Container>
       </Section>
       <Separator />
 
-      <Section>
+      <Section className="bg-white">
         <Container>
           <WhatIDo />
         </Container>
@@ -74,7 +74,7 @@ const Home: NextPage = () => {
         </Container>
       </Section>
 
-      <Section>
+      <Section className="bg-white">
         <Container>
           <Experiences />
         </Container>
@@ -82,7 +82,7 @@ const Home: NextPage = () => {
 
       <Separator />
 
-      <Section>
+      <Section className="bg-white">
         <Container>
           <Education />
         </Container>

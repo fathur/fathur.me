@@ -47,6 +47,7 @@ const Panel: React.FC = ({ children }) => {
 type ItemType = {
   company: string;
   position: string;
+  location?: string;
   skills: IconProp[];
   isWfo?: boolean;
   isWfh?: boolean;
@@ -54,14 +55,22 @@ type ItemType = {
   endDate: () => JSX.Element;
   workType: 'full-time' | 'part-time';
   description: () => JSX.Element;
+  tasks?: string[];
 };
-const myExperiences: ItemType[] = [
+export const myExperiences: ItemType[] = [
   {
     company: 'Continuum',
     position: 'Fullstack Engineer',
+    location: 'Chicago',
     skills: [faAws, faGithub, faNodeJs, faReact, faSass, faStripe],
     workType: 'full-time',
     isWfo: true,
+    tasks: [
+      'Fix bug on frontend based on Next.js',
+      'Fix bug on backend based on AWS Amplify',
+      'Create restful API for Continuum freelance platform',
+      'Lead internal Continuum team',
+    ],
     startDate() {
       return <>April 2021</>;
     },
@@ -78,11 +87,18 @@ const myExperiences: ItemType[] = [
     },
   },
   {
-    company: 'Sehati',
+    company: 'Sehati - TeleCTG',
+    location: 'Jakarta',
     position: 'Lead and Senior Backend Engineer',
     skills: [faAws, faGithub, faGem, faTrello],
     workType: 'full-time',
     isWfo: true,
+    tasks: [
+      'Communicating with product team to give technical feasibility insight of the product',
+      'Manage backend task for each sprint',
+      'Optimize Postgres database',
+      'Create Restful API for Sehati ecosystem',
+    ],
     startDate() {
       return <>April 2018</>;
     },
@@ -102,9 +118,16 @@ const myExperiences: ItemType[] = [
   {
     company: 'Ciayo',
     position: 'Senior Backend Developer',
+    location: 'Jakarta',
     skills: [faAws, faLaravel, faGitlab, faJira],
     workType: 'full-time',
     isWfo: true,
+    tasks: [
+      'Develop Restful API for Ciayo Virsos and Comics',
+      'Design and optimize Oracle database',
+      'Make a high performance MongoDB using replication',
+      'Develop an admin panel using Laravel',
+    ],
     startDate() {
       return <>Juny 2015</>;
     },
@@ -126,9 +149,17 @@ const myExperiences: ItemType[] = [
   {
     company: 'Fostrom',
     position: 'Web Developer',
+    location: 'Jakarta',
     skills: [faPhp, faGit, faGithub, faWordpress, faSass],
     workType: 'full-time',
     isWfo: true,
+    tasks: [
+      'Create company website for Perbanas',
+      'Create company website for Eezy (https://eezy.nl/)',
+      'Create company website for Yelloow',
+      'Create company website for Medtech Flanders (http://www.medtechflanders.be/)',
+      'Create KMS (Knowledge Management System) using Wordpress',
+    ],
     startDate() {
       return (
         <>
@@ -154,6 +185,7 @@ const myExperiences: ItemType[] = [
   },
   {
     company: 'Id-SIRTII/CC',
+    location: 'Jakarta',
     position: 'Application, Database, and Datecenter Staff',
     skills: [faPhp, faLinux, faUbuntu, faCentos, faFedora],
     workType: 'full-time',
@@ -187,10 +219,20 @@ const myExperiences: ItemType[] = [
         </>
       );
     },
+    tasks: [
+      'Develop an IDS (Intrusion Detection System) based on Snort',
+      // 'A red-team on Cyber Jawara competition. The Cyber Jawara' +
+      //   'competition is a penetration system competition held by the' +
+      //   'Minister of Defence (Kemhan) of Indonesia.',
+      'Assistant on computer forensic training',
+      'Assistant on secure coding with Java training',
+      'Trainer of operating system forensic',
+      'Trainer of security awareness',
+    ],
   },
 ];
 
-const Item: React.FC<ItemType> = ({
+export const Item: React.FC<ItemType> = ({
   company,
   position,
   isWfo,

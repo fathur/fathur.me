@@ -33,7 +33,7 @@ type EducationType = {
   title?: string;
   major: string;
 };
-const myEducations: EducationType[] = [
+export const myEducations: EducationType[] = [
   {
     university: 'University of Indonesia',
     major: 'Information and Technology',
@@ -49,7 +49,7 @@ const myEducations: EducationType[] = [
   },
 ];
 
-const mySkills: { title: string; icon?: IconProp }[] = [
+export const mySkills: { title: string; icon?: IconProp }[] = [
   {
     title: 'PHP',
     icon: faPhp,

@@ -40,7 +40,12 @@ const Hero = () => {
           application development.
         </p>
 
-        <Button danger className={'block md:inline-block'}>
+        <Button
+          danger
+          className={'block md:inline-block'}
+          href="/files/cv-2021.pdf"
+          target="_blank"
+        >
           <FontAwesomeIcon icon={faFileDownload} fixedWidth /> Download CV
         </Button>
 
