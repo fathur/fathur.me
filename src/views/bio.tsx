@@ -29,8 +29,8 @@ const Bio: React.FC = () => {
 
         <Paragraph>
           Need a <span className="font-bold text-emerald-500">tech leader</span>
-          , no problem. With my high technical skills plus the Scrum project
-          management, your development workflow will be very agile.
+          ? No problem. With my technical skills and using the Scrum framework,
+          your development workflow will be very agile.
         </Paragraph>
 
         <Paragraph>

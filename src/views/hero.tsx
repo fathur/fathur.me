@@ -42,7 +42,7 @@ const Hero = () => {
 
         <Button
           danger
-          className={'block md:inline-block'}
+          className={'inline-block'}
           href="/files/cv-2021.pdf"
           target="_blank"
         >
