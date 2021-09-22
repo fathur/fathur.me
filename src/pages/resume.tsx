@@ -44,7 +44,7 @@ const Skill: React.FC<PropsWithChildren<{ icon?: IconProp }>> = ({
     </div>
   );
 };
-const FathurRohmanResume = () => {
+const Resume = () => {
   return (
     <div className="grid grid-cols-3 gap-3 text-sm px-3 pt-3">
       {/*/left side*/}
@@ -193,4 +193,4 @@ const FathurRohmanResume = () => {
   );
 };
 
-export default FathurRohmanResume;
+export default Resume;
