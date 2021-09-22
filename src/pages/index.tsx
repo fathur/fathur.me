@@ -20,6 +20,7 @@ import Head from 'next/head';
 // @ts-ignore
 import nightwind from 'nightwind/helper';
 import classNames from 'classnames';
+import Link from 'next/link';
 
 const Home: NextPage = () => {
   return (
@@ -36,7 +37,7 @@ const Home: NextPage = () => {
             'container mx-auto px-2 py-4 text-white font-light text-2xl dark:text-white'
           }
         >
-          Fathur
+          <Link href="/">Fathur</Link>
         </div>
 
         {/*<button onClick={() => nightwind.toggle()}>t</button>*/}
