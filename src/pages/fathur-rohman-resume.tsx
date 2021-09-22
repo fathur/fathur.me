@@ -104,7 +104,7 @@ const FathurRohmanResume = () => {
               &nbsp;
               <Link href="https://www.fathur.me/">
                 <a
-                  href="https://github.com/fathur"
+                  href="https://www.fathur.me/"
                   target="_blank"
                   rel="noreferrer"
                 >
