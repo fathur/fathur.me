@@ -12,6 +12,8 @@ import { mySkills, myEducations } from '../views/education';
 import { Item, myExperiences } from '../views/experiences';
 import classNames from 'classnames';
 import Link from 'next/link';
+import { myCertifications } from '../views/certification';
+import dayjs from 'dayjs';
 
 const SectionHeading: React.FC = ({ children }) => (
   <div className="relative mb-3 mt-2">
@@ -46,73 +48,36 @@ const Skill: React.FC<PropsWithChildren<{ icon?: IconProp }>> = ({
 };
 const Resume = () => {
   return (
-    <div className="grid grid-cols-3 gap-3 text-sm px-3 pt-3">
+    <div className="grid grid-cols-5 gap-3 text-sm px-3 pt-3">
       {/*/left side*/}
-      <div className="">
+      <div className="col-span-2">
         <div className="block text-right">
           <h1 className="text-4xl font-black w-full mb-4 uppercase">Fathur</h1>
+          <ul className="text-gray-700">
+            <li className="inline-block ml-2">
+              <FontAwesomeIcon icon={faEnvelope} fixedWidth={true} />
+              &nbsp;hi.fathur.rohman@gmail.com
+            </li>
+            <li className="inline-block ml-2">
+              <FontAwesomeIcon icon={faPhone} fixedWidth={true} />
+              &nbsp;+62 8969 9518 803
+            </li>
+          </ul>
         </div>
         <div className="block">
+          <div className="border my-2" />
+
           <p className="mb-2 pt-2 text-gray-700 text-right text-base">
             <span className="font-semibold text-emerald-600">9 years</span> of
             experience in web application development. Using popular programming
             languages, databases, cloud platforms, and other stacks. Availabe to{' '}
             <span className="font-semibold text-emerald-600">lead</span> your
-            team. With my high technical skills plus project management, your
-            development workflow will be very{' '}
+            team. With my technical skills and management your development
+            workflow will be very{' '}
             <span className="font-semibold text-emerald-600">agile</span>.
           </p>
 
-          {/*Bio*/}
-          <ul className="text-gray-700">
-            <li>
-              <FontAwesomeIcon icon={faEnvelope} fixedWidth={true} />
-              &nbsp;hi.fathur.rohman@gmail.com
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faPhone} fixedWidth={true} />
-              &nbsp;+62 8969 9518 803
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faLinkedin} fixedWidth={true} />
-              &nbsp;
-              <Link href="https://www.linkedin.com/in/fathurrohman/">
-                <a
-                  href="https://www.linkedin.com/in/fathurrohman/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  linkedin.com/in/fathurrohman
-                </a>
-              </Link>
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faGithub} fixedWidth={true} />
-              &nbsp;
-              <Link href="https://github.com/fathur">
-                <a
-                  href="https://github.com/fathur"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  github.com/fathur
-                </a>
-              </Link>
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faGlobeAsia} fixedWidth={true} />
-              &nbsp;
-              <Link href="https://www.fathur.me/">
-                <a
-                  href="https://www.fathur.me/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  fathur.me
-                </a>
-              </Link>
-            </li>
-          </ul>
+          <div className="border my-2" />
         </div>
 
         {/*SKills*/}
@@ -151,10 +116,78 @@ const Resume = () => {
             </ul>
           </div>
         </div>
+
+        {/*Certification*/}
+        <div>
+          <SectionHeading>Certifications</SectionHeading>
+
+          <div className="border border-gray-300 bg-white px-2 py-2 rounded">
+            <ul>
+              {myCertifications.map((certification, i) => (
+                <li key={i} className={'mb-3'}>
+                  <ul>
+                    <li>
+                      {certification.startDate instanceof Date
+                        ? dayjs(certification.startDate).format('MMMM YYYY')
+                        : certification.startDate}{' '}
+                      -{' '}
+                      {certification.endDate instanceof Date
+                        ? dayjs(certification.endDate).format('MMMM YYYY')
+                        : certification.endDate}
+                    </li>
+                    <li className={'font-semibold'}>{certification.name}</li>
+                    {/*<li>{certification.issuer}</li>*/}
+                  </ul>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
       </div>
-      <div className="col-span-2">
+      <div className="col-span-3">
         <div className="block text-left">
           <h1 className="text-4xl font-black w-full mb-4 uppercase">Rohman</h1>
+          <ul className="text-gray-700">
+            <li className="inline-block mr-2">
+              <FontAwesomeIcon icon={faLinkedin} fixedWidth={true} />
+              &nbsp;
+              <Link href="https://www.linkedin.com/in/fathurrohman/">
+                <a
+                  href="https://www.linkedin.com/in/fathurrohman/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  linkedin.com/in/fathurrohman
+                </a>
+              </Link>
+            </li>
+            <li className="inline-block mr-2">
+              <FontAwesomeIcon icon={faGithub} fixedWidth={true} />
+              &nbsp;
+              <Link href="https://github.com/fathur">
+                <a
+                  href="https://github.com/fathur"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  github.com/fathur
+                </a>
+              </Link>
+            </li>
+            <li className="inline-block mr-2">
+              <FontAwesomeIcon icon={faGlobeAsia} fixedWidth={true} />
+              &nbsp;
+              <Link href="https://www.fathur.me/">
+                <a
+                  href="https://www.fathur.me/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  fathur.me
+                </a>
+              </Link>
+            </li>
+          </ul>
         </div>
 
         <div>

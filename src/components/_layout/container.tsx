@@ -10,7 +10,7 @@ const Container: React.FC<PropsWithChildren<Type>> = (props) => {
       {...props}
       className={classNames([
         className,
-        'container mx-auto px-4 md:px-2 py-8 md:py-16',
+        'container max-w-screen-xl mx-auto px-4 md:px-2 py-8 md:py-16',
       ])}
     >
       {children}

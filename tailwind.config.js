@@ -18,6 +18,8 @@ module.exports = {
         raleway: ['Raleway', 'sans-serif'],
         sans: ['Rubik', 'sans-serif'],
       },
+      // opacity: ['disabled'],
+      backgroundColor: ['disabled'],
     },
   },
   variants: {
