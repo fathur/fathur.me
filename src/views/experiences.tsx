@@ -39,7 +39,7 @@ import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
 const Panel: React.FC = ({ children }) => {
   return (
-    <BasePanel className="flex flex-col md:grid md:grid-cols-3">
+    <BasePanel className="flex flex-col md:grid md:grid-cols-3 backdrop-filter backdrop-blur md:odd:mr-40 md:even:ml-40">
       {children}
     </BasePanel>
   );

@@ -23,7 +23,9 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      margin: ['odd', 'even'],
+    },
   },
   plugins: [require('nightwind')],
 };
