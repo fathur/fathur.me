@@ -4,6 +4,7 @@ import Button from '../components/_form/button';
 import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
 import { H1 } from '../components/_content/typography';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
 const Hero = () => {
   return (
@@ -51,10 +52,11 @@ const Hero = () => {
 
         <Button
           className="inline-block mt-2 md:ml-2"
-          href="https://api.whatsapp.com/send?phone=6289699518803&text=Hi%2C%20I%27m%20interested%20in%20your%20web%20application%20development%20service."
+          // href="https://api.whatsapp.com/send?phone=6289699518803&text=Hi%2C%20I%27m%20interested%20in%20your%20web%20application%20development%20service."
+          href="mailto:hi.fathur.rohman@gmail.com?subject=Hello, I am interested!&body=Hello Fathur, "
           target="_blank"
         >
-          <FontAwesomeIcon icon={faWhatsapp} fixedWidth />
+          <FontAwesomeIcon icon={faEnvelope} fixedWidth />
           Contact me
         </Button>
       </div>

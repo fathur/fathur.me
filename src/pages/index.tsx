@@ -1,26 +1,20 @@
 import type { NextPage } from 'next';
-import Image from 'next/image';
 import Section from '../components/_layout/section';
 import Container from '../components/_layout/container';
-import Button from '../components/_form/button';
 import Bio from '../views/bio';
 import WhatIDo from '../views/what-i-do';
 import Hero from '../views/hero';
 import Experiences from '../views/experiences';
 import Separator from '../components/separator';
-import { H2 } from '../components/_content/typography';
 import React, { useEffect, useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import Education from '../views/education';
-import Portfolio from '../views/portfolio';
-import Whatsapp from '../components/whatsapp';
 import Footer from '../views/footer';
 import Head from 'next/head';
 // @ts-ignore
 import nightwind from 'nightwind/helper';
 import classNames from 'classnames';
 import Link from 'next/link';
+import Mail from '../components/mail';
 
 const Home: NextPage = () => {
   return (
@@ -70,7 +64,7 @@ const Home: NextPage = () => {
       <Section className="bg-gray-100 border-t-2 border-b-2 dark:bg-black dark:border-gray-700">
         <Container>
           <div className="text-center">
-            <Whatsapp />
+            <Mail />
           </div>
         </Container>
       </Section>
