@@ -10,6 +10,7 @@ import {
   faGitAlt,
   faGoogle,
   faHtml5,
+  faJoomla,
   faJs,
   faLaravel,
   faLess,
@@ -117,6 +118,10 @@ export const mySkills: { title: string; icon?: IconProp }[] = [
   {
     title: 'Redhat',
     icon: faRedhat,
+  },
+  {
+    title: 'Joomla',
+    icon: faJoomla,
   },
   {
     title: 'Git',

@@ -11,7 +11,7 @@ import Education from '../views/education';
 import Footer from '../views/footer';
 import Head from 'next/head';
 // @ts-ignore
-import nightwind from 'nightwind/helper';
+// import nightwind from 'nightwind/helper';
 import classNames from 'classnames';
 import Link from 'next/link';
 import Mail from '../components/mail';
@@ -23,7 +23,15 @@ const Home: NextPage = () => {
       <Head>
         <title>Fathur</title>
 
-        <script dangerouslySetInnerHTML={{ __html: nightwind.init() }} />
+        {/*<script dangerouslySetInnerHTML={{ __html: nightwind.init() }} />*/}
+
+        <meta name="theme-color" content="#000000" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta
+          name="apple-mobile-web-app-status-bar-style"
+          content="black-translucent"
+        />
+        <meta name="msapplication-navbutton-color" content="#000000" />
       </Head>
 
       <div className={'absolute w-full z-20 bg-transparent'}>
