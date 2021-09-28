@@ -28,7 +28,7 @@ class MyDocument extends Document {
             }}
           />
         </Head>
-        <body>
+        <body className="bg-black">
           <noscript>
             <iframe
               src="https://www.googletagmanager.com/ns.html?id=GTM-WQVKHVX"
