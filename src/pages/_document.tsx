@@ -14,7 +14,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html className="bg-gray-100">
+      <Html className="bg-black">
         <Head>
           {/* eslint-disable-next-line @next/next/next-script-for-ga */}
           <script
