@@ -15,6 +15,7 @@ import nightwind from 'nightwind/helper';
 import classNames from 'classnames';
 import Link from 'next/link';
 import Mail from '../components/mail';
+import Particles from 'react-tsparticles';
 
 const Home: NextPage = () => {
   return (
@@ -28,7 +29,7 @@ const Home: NextPage = () => {
       <div className={'absolute w-full z-20 bg-transparent'}>
         <div
           className={
-            'container mx-auto px-2 py-4 text-white font-light text-2xl dark:text-white'
+            'container max-w-screen-xl mx-auto px-2 py-4 text-white font-light text-2xl dark:text-white'
           }
         >
           <Link href="/">Fathur</Link>
@@ -43,7 +44,76 @@ const Home: NextPage = () => {
           'dark:bg-black': false,
         })}
       >
-        <Container className={'h-screen'}>
+        <Particles
+          className="absolute inset-0 z-20"
+          options={{
+            fpsLimit: 30,
+            interactivity: {
+              detectsOn: 'canvas',
+              events: {
+                resize: true,
+              },
+              modes: {
+                bubble: {
+                  distance: 400,
+                  duration: 2,
+                  opacity: 0.8,
+                  size: 40,
+                },
+                push: {
+                  quantity: 4,
+                },
+                repulse: {
+                  distance: 200,
+                  duration: 0.4,
+                },
+              },
+            },
+            particles: {
+              color: {
+                value: '#ffffff',
+              },
+              links: {
+                color: '#ffffff',
+                distance: 150,
+                enable: true,
+                opacity: 0,
+                width: 1,
+              },
+              collisions: {
+                enable: false,
+              },
+              move: {
+                direction: 'bottom',
+                enable: true,
+                outMode: 'bounce',
+                random: true,
+                speed: 6,
+                straight: false,
+              },
+              number: {
+                density: {
+                  enable: true,
+                  value_area: 800,
+                },
+                value: 80,
+              },
+              opacity: {
+                value: 0.5,
+              },
+              shape: {
+                type: 'polygon',
+              },
+              size: {
+                random: true,
+                value: 5,
+              },
+            },
+            detectRetina: true,
+          }}
+        />
+
+        <Container className="h-screen relative z-30">
           <Hero />
         </Container>
       </Section>

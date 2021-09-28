@@ -5,6 +5,7 @@ import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
 import { H1 } from '../components/_content/typography';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import Particles from 'react-tsparticles';
 
 const Hero = () => {
   return (

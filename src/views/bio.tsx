@@ -35,7 +35,7 @@ const Bio: React.FC = () => {
 
         <Paragraph>
           I code and create web for amazing people around the world. I like work
-          with new people. New people new Experiences.
+          with new people. New people new experiences.
         </Paragraph>
 
         <div className={'grid grid-cols-2 mt-5 dark:text-white'}>
