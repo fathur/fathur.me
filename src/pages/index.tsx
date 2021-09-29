@@ -47,8 +47,8 @@ const Home: NextPage = () => {
       >
         <div
           className={classNames(
-            'container max-w-screen-xl mx-auto px-4 py-3.5 text-white text-2xl dark:text-white ',
-            'standalone:flex standalone:flex-wrap standalone:justify-center standalone:content-end standalone:font-medium standalone:h-24 standalone:text-xl',
+            'container max-w-screen-xl mx-auto px-4 py-3.5 text-white text-2xl dark:text-white pt-safe-top',
+            'standalone:flex standalone:flex-wrap standalone:justify-center standalone:content-end standalone:font-medium standalone:text-xl',
           )}
         >
           <Link href="/">Fathur</Link>
