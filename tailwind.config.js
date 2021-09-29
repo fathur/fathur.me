@@ -20,6 +20,9 @@ module.exports = {
       },
       // opacity: ['disabled'],
       backgroundColor: ['disabled'],
+      screens: {
+        standalone: { raw: '(display-mode: standalone)' },
+      },
     },
   },
   variants: {

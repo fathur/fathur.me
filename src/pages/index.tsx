@@ -23,9 +23,10 @@ const Home: NextPage = () => {
       <Head>
         <title>Fathur</title>
 
+        <link rel="manifest" href="/site.webmanifest" />
         <meta
           name="viewport"
-          content="width = device-width, initial-scale = 1.0, minimum-scale = 1, maximum-scale = 1, user-scalable = no"
+          content="width = device-width, initial-scale = 1.0, minimum-scale = 1, maximum-scale = 1, user-scalable = no, viewport-fit=cover"
         />
 
         <meta name="theme-color" content="#000000" />
@@ -38,23 +39,32 @@ const Home: NextPage = () => {
         <meta name="msapplication-navbutton-color" content="#000000" />
       </Head>
 
-      <div className={'absolute w-full z-20 bg-transparent'}>
+      <header
+        className={classNames(
+          'absolute w-full z-20 top-0',
+          'standalone:fixed standalone:bg-black',
+        )}
+      >
         <div
-          className={
-            'container max-w-screen-xl mx-auto px-2 py-4 text-white font-light text-2xl dark:text-white'
-          }
+          className={classNames(
+            'container max-w-screen-xl mx-auto px-4 py-3.5 text-white text-2xl dark:text-white ',
+            'standalone:flex standalone:flex-wrap standalone:justify-center standalone:content-end standalone:font-medium standalone:h-24 standalone:text-xl',
+          )}
         >
           <Link href="/">Fathur</Link>
         </div>
 
         {/*<button onClick={() => nightwind.toggle()}>t</button>*/}
-      </div>
+      </header>
 
       <Section
-        className={classNames({
-          'bg-gradient-to-b from-black via-gray-800 to-white': true,
-          'dark:bg-black': false,
-        })}
+        className={classNames(
+          {
+            'bg-gradient-to-b from-black via-gray-800 to-white': true,
+            'dark:bg-black': false,
+          },
+          ['standalone:mt-24'],
+        )}
       >
         <Particles
           className="absolute inset-0 z-20"
@@ -125,7 +135,7 @@ const Home: NextPage = () => {
           }}
         />
 
-        <Container className="h-screen relative z-30">
+        <Container className="h-screen relative z-30 ">
           <Hero />
         </Container>
       </Section>

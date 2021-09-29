@@ -58,7 +58,7 @@ const Hero = () => {
           target="_blank"
         >
           <FontAwesomeIcon icon={faEnvelope} fixedWidth />
-          Contact me
+          &nbsp;Contact me
         </Button>
       </div>
     </div>
