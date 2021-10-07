@@ -35,12 +35,12 @@ type EducationType = {
   major: string;
 };
 export const myEducations: EducationType[] = [
-  {
-    university: 'University of Indonesia',
-    major: 'Information and Technology',
-    startYear: 2018,
-    endYear: 'present',
-  },
+  // {
+  //   university: 'University of Indonesia',
+  //   major: 'Information and Technology',
+  //   startYear: 2018,
+  //   endYear: 'present',
+  // },
   {
     university: 'Paramadina University',
     title: 'S.Kom.',

@@ -186,7 +186,7 @@ export const myExperiences: ItemType[] = [
   {
     company: 'Id-SIRTII/CC',
     location: 'Jakarta',
-    position: 'Application, Database, and Datecenter Staff',
+    position: 'Application, Database, and Datacenter Staff',
     skills: [faPhp, faLinux, faUbuntu, faCentos, faFedora],
     workType: 'full-time',
     isWfo: true,

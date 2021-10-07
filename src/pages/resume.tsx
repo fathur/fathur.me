@@ -93,7 +93,7 @@ const Resume = () => {
           </div>
         </div>
 
-        {/*Edu*/}
+        {/*Educations*/}
         <div>
           <SectionHeading>Educations</SectionHeading>
 
@@ -136,7 +136,6 @@ const Resume = () => {
                         : certification.endDate}
                     </li>
                     <li className={'font-semibold'}>{certification.name}</li>
-                    {/*<li>{certification.issuer}</li>*/}
                   </ul>
                 </li>
               ))}
@@ -206,9 +205,7 @@ const Resume = () => {
                 {experience.location} | {experience.startDate()} -{' '}
                 {experience.endDate()}
               </div>
-              {/*<div className="mt-2">*/}
-              {/*  <p className="text-gray-600">{experience.description()}</p>*/}
-              {/*</div>*/}
+
               <div>
                 <ul className="text-gray-700">
                   {experience.tasks?.map((task, is) => (
