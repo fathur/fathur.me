@@ -4,18 +4,13 @@ import { faHome } from '@fortawesome/free-solid-svg-icons';
 import {
   faAws,
   faCentos,
-  faCss3,
-  faCss3Alt,
   faFedora,
   faGit,
   faGithub,
   faGitlab,
-  faHtml5,
   faJira,
-  faJsSquare,
   faLaravel,
   faLinux,
-  faNode,
   faNodeJs,
   faPhp,
   faReact,
@@ -27,12 +22,10 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import {
   faBuilding,
-  faCalendar,
   faCalendarAlt,
   faClock,
   faGem,
 } from '@fortawesome/free-regular-svg-icons';
-import Badge from '../components/badge';
 import { H2, H4, Paragraph } from '../components/_content/typography';
 import BasePanel from '../components/panel';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
@@ -72,10 +65,18 @@ export const myExperiences: ItemType[] = [
       'Lead internal Continuum team',
     ],
     startDate() {
-      return <>April 2021</>;
+      return (
+        <>
+          Apr<span className={'hidden lg:inline'}>il</span> 2021
+        </>
+      );
     },
     endDate() {
-      return <>Present</>;
+      return (
+        <>
+          Sept<span className={'hidden lg:inline'}>ember</span> 2021
+        </>
+      );
     },
     description() {
       return (
@@ -100,10 +101,18 @@ export const myExperiences: ItemType[] = [
       'Create Restful API for Sehati ecosystem',
     ],
     startDate() {
-      return <>April 2018</>;
+      return (
+        <>
+          Apr<span className={'hidden lg:inline'}>il</span> 2018
+        </>
+      );
     },
     endDate() {
-      return <>April 2021</>;
+      return (
+        <>
+          Apr<span className={'hidden lg:inline'}>il</span> 2021
+        </>
+      );
     },
     description() {
       return (
@@ -129,7 +138,11 @@ export const myExperiences: ItemType[] = [
       'Develop an admin panel using Laravel',
     ],
     startDate() {
-      return <>Juny 2015</>;
+      return (
+        <>
+          Jun<span className={'hidden lg:inline'}>y</span> 2015
+        </>
+      );
     },
     endDate() {
       return <>March 2018</>;
