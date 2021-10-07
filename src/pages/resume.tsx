@@ -48,7 +48,7 @@ const Skill: React.FC<PropsWithChildren<{ icon?: IconProp }>> = ({
 };
 const Resume = () => {
   return (
-    <div className="grid grid-cols-5 gap-3 text-sm px-3 pt-3">
+    <div className="grid grid-cols-5 gap-3 text-sm px-3 pt-3 bg-white">
       {/*/left side*/}
       <div className="col-span-2">
         <div className="block text-right">
