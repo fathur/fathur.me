@@ -19,6 +19,7 @@ import {
   faTrello,
   faUbuntu,
   faWordpress,
+  faPython,
 } from '@fortawesome/free-brands-svg-icons';
 import {
   faBuilding,
@@ -51,6 +52,32 @@ type ItemType = {
   tasks?: string[];
 };
 export const myExperiences: ItemType[] = [
+  {
+    company: 'Julo',
+    position: 'Senior Backend Engineer',
+    location: 'Jakarta',
+    skills: [faPython],
+    workType: 'full-time',
+    isWfo: true,
+    tasks: [],
+    startDate() {
+      return (
+        <>
+          Nov<span className={'hidden lg:inline'}>ember</span> 2021
+        </>
+      );
+    },
+    endDate() {
+      return (
+        <>
+          Nov<span className={'hidden lg:inline'}>ember</span> 2021
+        </>
+      );
+    },
+    description() {
+      return <>Develop various finance service for Julo.</>;
+    },
+  },
   {
     company: 'Continuum',
     position: 'Fullstack Engineer',
