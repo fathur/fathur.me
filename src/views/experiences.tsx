@@ -47,7 +47,7 @@ type ItemType = {
   isWfh?: boolean;
   startDate: () => JSX.Element;
   endDate: () => JSX.Element;
-  workType: 'full-time' | 'part-time';
+  workType: 'full-time' | 'part-time' | 'probation' | 'intern';
   description: () => JSX.Element;
   tasks?: string[];
 };
@@ -57,7 +57,7 @@ export const myExperiences: ItemType[] = [
     position: 'Senior Backend Engineer',
     location: 'Jakarta',
     skills: [faPython],
-    workType: 'full-time',
+    workType: 'probation',
     isWfo: true,
     tasks: [],
     startDate() {
@@ -68,11 +68,7 @@ export const myExperiences: ItemType[] = [
       );
     },
     endDate() {
-      return (
-        <>
-          Nov<span className={'hidden lg:inline'}>ember</span> 2021
-        </>
-      );
+      return <>present</>;
     },
     description() {
       return <>Develop various finance service for Julo.</>;
