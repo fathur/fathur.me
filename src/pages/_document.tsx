@@ -14,7 +14,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html className="bg-black">
+      <Html className="">
         <Head>
           {/* eslint-disable-next-line @next/next/next-script-for-ga */}
           <script
@@ -28,7 +28,7 @@ class MyDocument extends Document {
             }}
           />
         </Head>
-        <body className="bg-black">
+        <body className="">
           <noscript>
             <iframe
               src="https://www.googletagmanager.com/ns.html?id=GTM-WQVKHVX"
