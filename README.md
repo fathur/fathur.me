@@ -1,36 +1,151 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Fathur.me - Personal Backend Engineer Website
 
-## Getting Started
+A modern, beautiful personal website showcasing backend engineering expertise with a dark theme.
 
-First, run the development server:
+## 🚀 Features
+
+- **Modern Design**: Clean, professional design with dark theme
+- **Responsive Layout**: Mobile-first responsive design
+- **Interactive Elements**: Smooth transitions and hover effects
+- **Professional Sections**: Hero, About, Skills, and Contact sections
+- **Skill Visualization**: Progress bars and skill categories
+- **SEO Optimized**: Proper meta tags and semantic HTML
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 15 with App Router
+- **Styling**: Tailwind CSS 4
+- **Icons**: Lucide React
+- **Language**: TypeScript
+- **Fonts**: Geist Sans & Geist Mono (Google Fonts)
+
+## 📱 Sections
+
+### Hero Section
+
+- Professional title and tagline
+- Call-to-action buttons
+- Gradient text effects
+
+### About Section
+
+- Professional summary
+- Core competencies
+- Core values with icons
+
+### Skills Section
+
+- **Programming Languages**: Python, PHP, Ruby, Go, TypeScript
+- **Frameworks**: Laravel, Django, Ruby on Rails, Express.js, Gin
+- **Databases**: MySQL, PostgreSQL, MariaDB, Redis, MongoDB
+- **DevOps**: Docker, Kubernetes, CI/CD, AWS/GCP, Terraform
+- **Tools & Others**: Git, Linux, REST APIs, GraphQL, Microservices
+- **Testing & Quality**: Unit Testing, Integration Tests, Code Review, Performance Testing, Security Auditing
+
+### Contact Section
+
+- Email contact
+- Social media links (GitHub, LinkedIn)
+- Professional interests
+
+## 🎨 Design Features
+
+- **Color Scheme**: Dark theme with blue and purple accents
+- **Typography**: Modern sans-serif fonts with proper hierarchy
+- **Spacing**: Consistent spacing using Tailwind's spacing scale
+- **Animations**: Smooth transitions and hover effects
+- **Icons**: Professional Lucide React icons throughout
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- pnpm (recommended) or npm
+
+### Installation
+
+1. Clone the repository:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <repository-url>
+cd fathur.me
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. Start the development server:
 
-## Learn More
+```bash
+pnpm dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Build for Production
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+pnpm build
+pnpm start
+```
 
-## Deploy on Vercel
+## 📁 Project Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+src/
+├── app/
+│   ├── globals.css          # Global styles and Tailwind config
+│   ├── layout.tsx           # Root layout with metadata
+│   └── page.tsx             # Main homepage component
+├── components/               # Reusable components (future)
+└── lib/                      # Utility functions (future)
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🎯 Customization
+
+### Personal Information
+
+- Update the metadata in `src/app/layout.tsx`
+- Modify personal details in `src/app/page.tsx`
+- Update contact information and social links
+
+### Styling
+
+- Modify color scheme in `src/app/globals.css`
+- Update Tailwind classes in components
+- Customize spacing and typography
+
+### Content
+
+- Edit section content in the main page component
+- Update skill levels and descriptions
+- Modify professional summary and experience
+
+## 🌟 Key Features
+
+- **Professional Branding**: Clean, modern design that reflects backend engineering expertise
+- **Skill Showcase**: Visual representation of technical skills with progress indicators
+- **Responsive Design**: Works perfectly on all device sizes
+- **Performance**: Optimized with Next.js 15 and modern build tools
+- **Accessibility**: Semantic HTML and proper ARIA labels
+- **SEO Ready**: Meta tags, structured data, and semantic markup
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📞 Contact
+
+For questions or support, please reach out through the contact form on the website.
+
+---
+
+Built with ❤️ using Next.js and Tailwind CSS
