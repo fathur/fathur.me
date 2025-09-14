@@ -69,7 +69,7 @@ function ExperienceItem({ timeline }: ExperienceItemProps) {
           {timeline.description}
         </p>
 
-        <div className="grid md:grid-cols-2 gap-4">
+        <div className="grid md:grid-cols-[2fr_1fr] gap-4">
           <div>
             <h4 className="font-semibold mb-2 text-foreground">
               Key Achievements:
