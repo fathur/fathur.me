@@ -1,7 +1,9 @@
 import Section from './section';
-import { TimelineData, TimelineType, EmploymentType } from '@/components/constants';
-
-
+import {
+  TimelineData,
+  TimelineType,
+  EmploymentType,
+} from '@/components/constants';
 
 interface Timeline {
   type: TimelineType;
@@ -73,8 +75,8 @@ function ExperienceItem({ timeline }: ExperienceItemProps) {
               Key Achievements:
             </h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              {timeline.achievements.map(achievement => (
-                <li className="flex items-start space-x-2">
+              {timeline.achievements.map((achievement, index) => (
+                <li key={index} className="flex items-start space-x-2">
                   <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></div>
                   <span>{achievement}</span>
                 </li>
@@ -87,8 +89,11 @@ function ExperienceItem({ timeline }: ExperienceItemProps) {
               Technologies:
             </h4>
             <div className="flex flex-wrap gap-2">
-              {timeline.technologies.map(technology => (
-                <span className="px-3 py-1 bg-primary/10 text-primary text-xs rounded-full">
+              {timeline.technologies.map((technology, index) => (
+                <span
+                  key={index}
+                  className="px-3 py-1 bg-primary/10 text-primary text-xs rounded-full"
+                >
                   {technology}
                 </span>
               ))}
@@ -101,30 +106,27 @@ function ExperienceItem({ timeline }: ExperienceItemProps) {
 }
 
 function EducationItem({ timeline }: EducationItemProps) {
-    return (
-        <div className="bg-secondary/20 rounded-2xl p-8 border border-border hover:border-lime-500/50 transition-colors">
-          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
-            <div>
-              <h3 className="text-2xl font-semibold text-lime-500 mb-2">
-                {timeline.position}
-              </h3>
-              <p className="text-xl text-foreground mb-1">{timeline.company}</p>
-              <p className="text-muted-foreground">
-                {formatDateRange(timeline.beginDate, timeline.endDate)}
-              </p>
-            </div>
-            
-          </div>
-    
-          <div className="space-y-4">
-            <p className="text-muted-foreground leading-relaxed">
-              {timeline.description}
-            </p>
-    
-            
-          </div>
+  return (
+    <div className="bg-secondary/20 rounded-2xl p-8 border border-border hover:border-lime-500/50 transition-colors">
+      <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
+        <div>
+          <h3 className="text-2xl font-semibold text-lime-500 mb-2">
+            {timeline.position}
+          </h3>
+          <p className="text-xl text-foreground mb-1">{timeline.company}</p>
+          <p className="text-muted-foreground">
+            {formatDateRange(timeline.beginDate, timeline.endDate)}
+          </p>
         </div>
-      );
+      </div>
+
+      <div className="space-y-4">
+        <p className="text-muted-foreground leading-relaxed">
+          {timeline.description}
+        </p>
+      </div>
+    </div>
+  );
 }
 
 export default function Timelines() {

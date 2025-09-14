@@ -1,13 +1,4 @@
-import {
-  CodeIcon,
-  DatabaseIcon,
-  ServerIcon,
-  CogIcon,
-  GlobeIcon,
-  MailIcon,
-  GithubIcon,
-  LinkedinIcon,
-} from 'lucide-react';
+import { CodeIcon } from 'lucide-react';
 
 export default function Navbar() {
   return (

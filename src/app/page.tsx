@@ -4,20 +4,11 @@ import {
   ServerIcon,
   CogIcon,
   GlobeIcon,
+  LinkedinIcon,
   MailIcon,
   GithubIcon,
-  LinkedinIcon,
 } from 'lucide-react';
-import {
-  CodeBracketIcon,
-  ServerStackIcon,
-  Cog6ToothIcon,
-  GlobeAltIcon,
-  EnvelopeIcon,
-  UserGroupIcon,
-} from '@heroicons/react/24/outline';
 
-import Navbar from '@/components/page/navbar';
 import Section from '@/components/page/section';
 import Timelines from '@/components/page/timelines';
 
@@ -159,7 +150,7 @@ export default function Home() {
         }
         description={
           <>
-            I'm a passionate backend engineer with expertise in building
+            I&apos;m a passionate backend engineer with expertise in building
             scalable web applications and APIs.
           </>
         }
@@ -568,11 +559,12 @@ export default function Home() {
       <Section id="contact" className="bg-secondary/20">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-            Let's Work Together
+            Let&apos;s Work Together
           </h2>
           <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
-            I'm always interested in new opportunities and exciting projects.
-            Let's discuss how I can help bring your ideas to life.
+            I&apos;m always interested in new opportunities and exciting
+            projects. Let&apos;s discuss how I can help bring your ideas to
+            life.
           </p>
 
           <div className="grid md:grid-cols-2 gap-8 mb-12">
@@ -616,7 +608,9 @@ export default function Home() {
           </div>
 
           <div className="bg-secondary/50 rounded-2xl p-8 border border-border">
-            <h3 className="text-xl font-semibold mb-4">What I'm Looking For</h3>
+            <h3 className="text-xl font-semibold mb-4">
+              What I&apos;m Looking For
+            </h3>
             <div className="grid md:grid-cols-3 gap-4 text-sm">
               <div className="flex items-center space-x-2">
                 <div className="w-2 h-2 bg-primary rounded-full"></div>
