@@ -234,14 +234,22 @@ export default function Home() {
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors" />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2 text-foreground">E-commerce API</h3>
+                <h3 className="text-xl font-semibold mb-2 text-foreground">
+                  E-commerce API
+                </h3>
                 <p className="text-muted-foreground text-sm mb-4">
                   Scalable REST API built with Node.js, Express, and PostgreSQL
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">Node.js</span>
-                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">PostgreSQL</span>
-                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">JWT</span>
+                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">
+                    Node.js
+                  </span>
+                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">
+                    PostgreSQL
+                  </span>
+                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">
+                    JWT
+                  </span>
                 </div>
               </div>
             </div>
@@ -257,14 +265,22 @@ export default function Home() {
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors" />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2 text-foreground">Real-time Chat System</h3>
+                <h3 className="text-xl font-semibold mb-2 text-foreground">
+                  Real-time Chat System
+                </h3>
                 <p className="text-muted-foreground text-sm mb-4">
                   WebSocket-based chat application with Redis pub/sub
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">WebSocket</span>
-                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">Redis</span>
-                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">Socket.io</span>
+                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">
+                    WebSocket
+                  </span>
+                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">
+                    Redis
+                  </span>
+                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">
+                    Socket.io
+                  </span>
                 </div>
               </div>
             </div>
@@ -280,14 +296,22 @@ export default function Home() {
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors" />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2 text-foreground">Microservices Platform</h3>
+                <h3 className="text-xl font-semibold mb-2 text-foreground">
+                  Microservices Platform
+                </h3>
                 <p className="text-muted-foreground text-sm mb-4">
                   Containerized microservices with Docker and Kubernetes
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">Docker</span>
-                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">Kubernetes</span>
-                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">gRPC</span>
+                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">
+                    Docker
+                  </span>
+                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">
+                    Kubernetes
+                  </span>
+                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">
+                    gRPC
+                  </span>
                 </div>
               </div>
             </div>
@@ -303,14 +327,22 @@ export default function Home() {
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors" />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2 text-foreground">Data Analytics Pipeline</h3>
+                <h3 className="text-xl font-semibold mb-2 text-foreground">
+                  Data Analytics Pipeline
+                </h3>
                 <p className="text-muted-foreground text-sm mb-4">
                   ETL pipeline processing millions of records daily
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">Python</span>
-                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">Apache Kafka</span>
-                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">MongoDB</span>
+                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">
+                    Python
+                  </span>
+                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">
+                    Apache Kafka
+                  </span>
+                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">
+                    MongoDB
+                  </span>
                 </div>
               </div>
             </div>

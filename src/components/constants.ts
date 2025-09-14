@@ -27,9 +27,15 @@ export const TimelineData = [
       'Recipient of Paramadina Fellowship full scholarship program for academic excellence',
       'Developed academic information system as capstone project, demonstrating practical application of software engineering principles',
       'Contributed to PERTAMINA oil company subsystem development, gaining real-world industry experience',
-      'Completed internship at ID-SIRTII in malware analysis, expanding cybersecurity and system security knowledge'
+      'Completed internship at ID-SIRTII in malware analysis, expanding cybersecurity and system security knowledge',
     ],
-    technologies: ['PHP', 'MySQL', 'Web Development', 'Database Design', 'Information Systems'],
+    technologies: [
+      'PHP',
+      'MySQL',
+      'Web Development',
+      'Database Design',
+      'Information Systems',
+    ],
   },
   {
     type: TimelineType.EXPERIENCE,
@@ -73,12 +79,8 @@ export const TimelineData = [
     employmentType: EmploymentType.FULLTIME,
     employmentLocation: EmploymentLocation.ONSITE,
     description: '',
-    achievements: [
-      ''
-    ],
-    technologies: [
-      'Oracle 11g Database', 'Laravel', 'MongoDB', 'Linux', 'AWS'
-    ],
+    achievements: [''],
+    technologies: ['Oracle 11g Database', 'Laravel', 'MongoDB', 'Linux', 'AWS'],
   },
   {
     type: TimelineType.EXPERIENCE,
@@ -90,9 +92,7 @@ export const TimelineData = [
     employmentLocation: EmploymentLocation.ONSITE,
     description: '',
     achievements: [],
-    technologies: [
-      'Ruby', 'PostgreSQL', 'Linux', 'AWS'
-    ],
+    technologies: ['Ruby', 'PostgreSQL', 'Linux', 'AWS'],
   },
 
   {
@@ -113,13 +113,20 @@ export const TimelineData = [
     endDate: new Date('2021-09-01'),
     employmentType: EmploymentType.CONTRACT,
     employmentLocation: EmploymentLocation.REMOTE,
-    description: 'Delivered full-stack development solutions for diverse client projects at a software agency, specializing in web application development and API integration. Led development of key features for an online job matcher platform and property website, utilizing Laravel and Node.js for backend services and React for frontend interfaces. Collaborated with a cross-functional team of 15+ developers to deliver scalable web solutions that enhanced client business operations and user engagement.',
+    description:
+      'Delivered full-stack development solutions for diverse client projects at a software agency, specializing in web application development and API integration. Led development of key features for an online job matcher platform and property website, utilizing Laravel and Node.js for backend services and React for frontend interfaces. Collaborated with a cross-functional team of 15+ developers to deliver scalable web solutions that enhanced client business operations and user engagement.',
     achievements: [
       'Developed robust REST APIs and backend services for online job matcher platform using React and Node.js',
       'Engineered and maintained the backend system for a property website using Laravel',
     ],
     technologies: [
-      'Laravel', 'Node.js', 'React', 'DynamoDB', 'AWS', 'REST APIs', 'JavaScript'
+      'Laravel',
+      'Node.js',
+      'React',
+      'DynamoDB',
+      'AWS',
+      'REST APIs',
+      'JavaScript',
     ],
   },
 
@@ -131,16 +138,24 @@ export const TimelineData = [
     // endDate: new Date('2025-03-01'),
     employmentType: EmploymentType.CONTRACT,
     employmentLocation: EmploymentLocation.REMOTE,
-    description: 'Design and implement backend development for JULO\'s comprehensive onboarding system, enabling seamless customer acquisition and loan eligibility assessment. Architected and maintained microservices using Django and Go to handle critical fintech operations including credit scoring, KYC verification, and document processing. Collaborated with cross-functional teams of 10+ members across frontend, data, and product departments to deliver scalable solutions that process thousands of loan applications daily.',
+    description:
+      "Design and implement backend development for JULO's comprehensive onboarding system, enabling seamless customer acquisition and loan eligibility assessment. Architected and maintained microservices using Django and Go to handle critical fintech operations including credit scoring, KYC verification, and document processing. Collaborated with cross-functional teams of 10+ members across frontend, data, and product departments to deliver scalable solutions that process thousands of loan applications daily.",
     achievements: [
       'Developed dedicated microservice for FDC government integration, handling efficient queue system',
       'Created digital signature feature to handle PDF document originality verification and authentication',
       'Integrated various and complex scoring systems for comprehensive risk assessment and loan eligibility',
       'Developed and maintained Field Collection system for field agents to manage loan collections',
-      'Established and enforced standardized code formatting practices through automated tooling'
+      'Established and enforced standardized code formatting practices through automated tooling',
     ],
     technologies: [
-      'Django', 'Python', 'Go', 'PostgreSQL', 'AliCloud', 'GCP', 'REST APIs', 'Microservices'
+      'Django',
+      'Python',
+      'Go',
+      'PostgreSQL',
+      'AliCloud',
+      'GCP',
+      'REST APIs',
+      'Microservices',
     ],
   },
 ];
