@@ -87,7 +87,7 @@ export default function Home() {
             <div className="text-center order-1 md:order-1">
               <div className="mb-4">
                 <div className="mb-5 text-3xl sm:text-4xl lg:text-5xl font-bold text-muted-foreground/60">
-                  {'{'} frontend {'}'}
+                  &lt; frontend &gt;
                 </div>
                 <p className="text-lg lg:text-xl max-w-2xl mx-auto leading-relaxed mb-8 font-semibold text-muted-foreground/50">
                   Love to write clean, beautiful and elegant code for the web
@@ -129,7 +129,7 @@ export default function Home() {
             <div className="text-center order-3 md:order-3">
               <div className="mb-4">
                 <div className="mb-5 text-3xl sm:text-4xl lg:text-5xl font-bold text-muted-foreground/60">
-                  &lt; backend &gt;
+                  {'{'} backend {'}'}
                 </div>
                 <p className="text-lg lg:text-xl max-w-2xl mx-auto leading-relaxed mb-8 font-semibold text-muted-foreground/50">
                   Expertise in building scalable web applications and APIs
