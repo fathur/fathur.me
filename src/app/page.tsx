@@ -11,6 +11,7 @@ import {
 
 import Section from '@/components/page/section';
 import Timelines from '@/components/page/timelines';
+import Portfolio from '@/components/page/portfolio';
 
 export default function Home() {
   return (
@@ -211,144 +212,7 @@ export default function Home() {
       </Section>
 
       {/* Portfolio Section */}
-      <Section id="portfolio" className="bg-secondary/20">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-              Featured Projects
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              A showcase of my recent work and side projects
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* Project 1 */}
-            <div className="group bg-background rounded-2xl overflow-hidden border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
-              <div className="aspect-video bg-gradient-to-br from-blue-500 to-purple-600 relative overflow-hidden">
-                <img
-                  src="https://picsum.photos/400/300?random=1"
-                  alt="E-commerce API"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors" />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2 text-foreground">
-                  E-commerce API
-                </h3>
-                <p className="text-muted-foreground text-sm mb-4">
-                  Scalable REST API built with Node.js, Express, and PostgreSQL
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">
-                    Node.js
-                  </span>
-                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">
-                    PostgreSQL
-                  </span>
-                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">
-                    JWT
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            {/* Project 2 */}
-            <div className="group bg-background rounded-2xl overflow-hidden border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
-              <div className="aspect-video bg-gradient-to-br from-green-500 to-teal-600 relative overflow-hidden">
-                <img
-                  src="https://picsum.photos/400/300?random=2"
-                  alt="Real-time Chat System"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors" />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2 text-foreground">
-                  Real-time Chat System
-                </h3>
-                <p className="text-muted-foreground text-sm mb-4">
-                  WebSocket-based chat application with Redis pub/sub
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">
-                    WebSocket
-                  </span>
-                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">
-                    Redis
-                  </span>
-                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">
-                    Socket.io
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            {/* Project 3 */}
-            <div className="group bg-background rounded-2xl overflow-hidden border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
-              <div className="aspect-video bg-gradient-to-br from-orange-500 to-red-600 relative overflow-hidden">
-                <img
-                  src="https://picsum.photos/400/300?random=3"
-                  alt="Microservices Architecture"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors" />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2 text-foreground">
-                  Microservices Platform
-                </h3>
-                <p className="text-muted-foreground text-sm mb-4">
-                  Containerized microservices with Docker and Kubernetes
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">
-                    Docker
-                  </span>
-                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">
-                    Kubernetes
-                  </span>
-                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">
-                    gRPC
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            {/* Project 4 */}
-            <div className="group bg-background rounded-2xl overflow-hidden border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
-              <div className="aspect-video bg-gradient-to-br from-purple-500 to-pink-600 relative overflow-hidden">
-                <img
-                  src="https://picsum.photos/400/300?random=4"
-                  alt="Data Analytics Pipeline"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors" />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2 text-foreground">
-                  Data Analytics Pipeline
-                </h3>
-                <p className="text-muted-foreground text-sm mb-4">
-                  ETL pipeline processing millions of records daily
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">
-                    Python
-                  </span>
-                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">
-                    Apache Kafka
-                  </span>
-                  <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">
-                    MongoDB
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </Section>
+      <Portfolio />
 
       {/* Work Experience Section */}
       <Timelines />

@@ -3,7 +3,7 @@ import {
   TimelineData,
   TimelineType,
   EmploymentType,
-} from '@/components/constants';
+} from '@/components/utilities/constants/timeline';
 
 interface Timeline {
   type: TimelineType;
