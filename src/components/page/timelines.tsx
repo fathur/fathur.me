@@ -4,6 +4,7 @@ import {
   TimelineType,
   EmploymentType,
 } from '@/components/utilities/constants/timeline';
+import classNames from 'classnames';
 
 interface Timeline {
   type: TimelineType;
@@ -46,7 +47,13 @@ const formatDateRange = (beginDate: Date, endDate?: Date): string => {
 
 function ExperienceItem({ timeline }: ExperienceItemProps) {
   return (
-    <div className="bg-secondary/20 rounded-2xl p-8 border border-border hover:border-primary/50 transition-colors">
+    <div
+      className={classNames(
+        'bg-secondary/20 rounded-2xl p-8 border border-border hover:border-primary/50 transition-colors relative',
+        "before:absolute before:-left-3 before:top-8 before:w-0 before:h-0 before:border-t-[12px] before:border-b-[12px] before:border-r-[12px] before:border-t-transparent before:border-b-transparent before:border-r-border before:content-[''] hover:before:border-r-primary/50 before:transition-colors before:bg-transparent"
+        //  "after:absolute after:-left-3 after:top-8 after:w-0 after:h-0 after:border-t-[12px] after:border-b-[12px] after:border-r-[12px] after:border-t-transparent after:border-b-transparent after:border-r-background after:content-[''] after:scale-60"
+      )}
+    >
       <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
         <div>
           <h3 className="text-2xl font-semibold text-primary mb-2">
@@ -107,7 +114,7 @@ function ExperienceItem({ timeline }: ExperienceItemProps) {
 
 function EducationItem({ timeline }: EducationItemProps) {
   return (
-    <div className="bg-secondary/20 rounded-2xl p-8 border border-border hover:border-lime-500/50 transition-colors">
+    <div className="bg-secondary/20 rounded-2xl p-8 border border-border hover:border-lime-500/50 transition-colors relative before:absolute before:-left-3 before:top-8 before:w-0 before:h-0 before:border-t-[12px] before:border-b-[12px] before:border-r-[12px] before:border-t-transparent before:border-b-transparent before:border-r-border before:content-[''] hover:before:border-r-lime-500/50 before:transition-colors before:bg-transparent after:absolute after:-left-3 after:top-8 after:w-0 after:h-0 after:border-t-[12px] after:border-b-[12px] after:border-r-[12px] after:border-t-transparent after:border-b-transparent after:border-r-background after:content-[''] after:scale-95">
       <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
         <div>
           <h3 className="text-2xl font-semibold text-lime-500 mb-2">
@@ -141,20 +148,32 @@ export default function Timelines() {
       title="My Journey"
       description="A brief ot timelines through my professional experiences and educations in backend engineering and software development"
     >
-      <div className="space-y-8">
-        {sortedTimelines.map((timeline, index) =>
-          timeline.type === TimelineType.EXPERIENCE ? (
-            <ExperienceItem
+      <div className="relative">
+        {/* Vertical timeline line */}
+        <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-primary/30"></div>
+
+        <div className="space-y-8">
+          {sortedTimelines.map((timeline, index) => (
+            <div
               key={`${timeline.type}-${index}`}
-              timeline={timeline}
-            />
-          ) : (
-            <EducationItem
-              key={`${timeline.type}-${index}`}
-              timeline={timeline}
-            />
-          )
-        )}
+              className="relative flex items-start"
+            >
+              {/* Timeline bullet */}
+              <div className="absolute left-6 top-9 w-4 h-4 bg-primary rounded-full border-4 border-background z-10 flex items-center justify-center">
+                <div className="w-2 h-2 bg-background rounded-full"></div>
+              </div>
+
+              {/* Timeline content */}
+              <div className="ml-16 flex-1">
+                {timeline.type === TimelineType.EXPERIENCE ? (
+                  <ExperienceItem timeline={timeline} />
+                ) : (
+                  <EducationItem timeline={timeline} />
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </Section>
   );
