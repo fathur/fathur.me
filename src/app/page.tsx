@@ -12,6 +12,7 @@ import {
 import Section from '@/components/page/section';
 import Timelines from '@/components/page/timelines';
 import Portfolio from '@/components/page/portfolio';
+import HighLevelSkills from '@/components/page/high-skills';
 
 export default function Home() {
   return (
@@ -211,91 +212,13 @@ export default function Home() {
         </div>
       </Section>
 
+      <HighLevelSkills />
+
       {/* Portfolio Section */}
       <Portfolio />
 
       {/* Work Experience Section */}
       <Timelines />
-
-      {/* Skills Section */}
-      <Section id="skills" className="bg-secondary/20">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-              High Level Skills
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              A comprehensive toolkit for building robust backend systems
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-1 lg:grid-cols-1 gap-8">
-            {/* Programming Languages */}
-            <div className="bg-secondary/20 rounded-2xl p-8 border border-border hover:border-primary/50 transition-colors">
-              <div className="flex items-center space-x-3 mb-4">
-                <CodeIcon className="h-8 w-8 text-primary" />
-                <h3 className="text-xl font-semibold">Languages</h3>
-              </div>
-              <div className="space-y-3">
-                <div className="flex items-center justify-between">
-                  <span>Strong problem-solving</span>
-                  <div className="w-20 h-2 bg-muted rounded-full">
-                    <div className="w-16 h-2 bg-primary rounded-full"></div>
-                  </div>
-                </div>
-                <div className="flex items-center justify-between">
-                  <span>Advanced system design</span>
-                  <div className="w-20 h-2 bg-muted rounded-full">
-                    <div className="w-18 h-2 bg-primary rounded-full"></div>
-                  </div>
-                </div>
-                <div className="flex items-center justify-between">
-                  <span>Database optimization</span>
-                  <div className="w-20 h-2 bg-muted rounded-full">
-                    <div className="w-16 h-2 bg-primary rounded-full"></div>
-                  </div>
-                </div>
-                <div className="flex items-center justify-between">
-                  <span>Performance tuning</span>
-                  <div className="w-20 h-2 bg-muted rounded-full">
-                    <div className="w-14 h-2 bg-primary rounded-full"></div>
-                  </div>
-                </div>
-                <div className="flex items-center justify-between">
-                  <span>System architecture</span>
-                  <div className="w-20 h-2 bg-muted rounded-full">
-                    <div className="w-18 h-2 bg-primary rounded-full"></div>
-                  </div>
-                </div>
-                <div className="flex items-center justify-between">
-                  <span>Leadership</span>
-                  <div className="w-20 h-2 bg-muted rounded-full">
-                    <div className="w-18 h-2 bg-primary rounded-full"></div>
-                  </div>
-                </div>
-                <div className="flex items-center justify-between">
-                  <span>Mentoring</span>
-                  <div className="w-20 h-2 bg-muted rounded-full">
-                    <div className="w-18 h-2 bg-primary rounded-full"></div>
-                  </div>
-                </div>
-                <div className="flex items-center justify-between">
-                  <span>Cross team collaboration</span>
-                  <div className="w-20 h-2 bg-muted rounded-full">
-                    <div className="w-18 h-2 bg-primary rounded-full"></div>
-                  </div>
-                </div>
-                <div className="flex items-center justify-between">
-                  <span>Balancing business and technical needs</span>
-                  <div className="w-20 h-2 bg-muted rounded-full">
-                    <div className="w-18 h-2 bg-primary rounded-full"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </Section>
 
       {/* Skills Section */}
       <Section id="skills" className="">
