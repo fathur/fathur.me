@@ -13,6 +13,7 @@ import Section from '@/components/page/section';
 import Timelines from '@/components/page/timelines';
 import Portfolio from '@/components/page/portfolio';
 import HighLevelSkills from '@/components/page/high-skills';
+import WhoAmI from '@/components/page/who-am-i';
 
 export default function Home() {
   return (
@@ -142,75 +143,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <Section
-        id="about"
-        className="bg-secondary/20"
-        title={
-          <>
-            Hi, nice to <i>e</i>-meet you!
-          </>
-        }
-        description={
-          <>
-            I&apos;m a passionate backend engineer with expertise in building
-            scalable web applications and APIs.
-          </>
-        }
-      >
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <h3 className="text-2xl font-semibold mb-6">What I Do</h3>
-            <div className="space-y-4">
-              <div className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                <p className="text-muted-foreground">
-                  Design and implement RESTful APIs and microservices
-                </p>
-              </div>
-              <div className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                <p className="text-muted-foreground">
-                  Optimize database performance and design efficient schemas
-                </p>
-              </div>
-              <div className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                <p className="text-muted-foreground">
-                  Implement CI/CD pipelines and DevOps practices
-                </p>
-              </div>
-              <div className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                <p className="text-muted-foreground">
-                  Ensure code quality through testing and code reviews
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-secondary/50 rounded-2xl p-8 border border-border">
-            <h4 className="text-xl font-semibold mb-4">Core Values</h4>
-            <div className="space-y-3">
-              <div className="flex items-center space-x-3">
-                <CogIcon className="h-5 w-5 text-primary" />
-                <span>Clean, maintainable code</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <DatabaseIcon className="h-5 w-5 text-primary" />
-                <span>Performance optimization</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <GlobeIcon className="h-5 w-5 text-primary" />
-                <span>Scalable architecture</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <ServerIcon className="h-5 w-5 text-primary" />
-                <span>Security first approach</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </Section>
+      <WhoAmI />
 
       <HighLevelSkills />
 
