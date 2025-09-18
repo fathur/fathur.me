@@ -47,6 +47,44 @@ const cloudProviders = [
   // { name: "Cloudflare", logo: "/images/logo/cloudflare.png" },
 ];
 
+interface TechStackItem {
+  name: string;
+  logo: string;
+}
+
+interface TechStackProps {
+  items: TechStackItem[];
+  className?: string;
+}
+
+function TechStack({ items }: TechStackProps) {
+  return (
+    <div
+      className={`flex flex-wrap justify-center gap-y-10 gap-x-15 md:gap-x-20`}
+    >
+      {items.map((tech, index) => (
+        <div
+          key={`tech-${index}`}
+          className="flex-shrink-0 flex flex-col items-center justify-center"
+        >
+          <div className="text-6xl mb-2">
+            <Image
+              src={tech.logo}
+              alt={tech.name}
+              width={100}
+              height={100}
+              className="object-contain"
+            />
+          </div>
+          <span className="text-sm font-medium text-muted-foreground">
+            {tech.name}
+          </span>
+        </div>
+      ))}
+    </div>
+  );
+}
+
 export default function TechStacks() {
   return (
     <Section
@@ -59,93 +97,10 @@ export default function TechStacks() {
         {/* <div className="absolute left-0 top-0 w-20 h-full bg-gradient-to-r from-background to-transparent z-10"></div> */}
         {/* <div className="absolute right-0 top-0 w-20 h-full bg-gradient-to-l from-background to-transparent z-10"></div> */}
 
-        <div className="flex flex-wrap justify-center gap-5">
-          {programmingLanguages.map((tech, index) => (
-            <div
-              key={`first-${index}`}
-              className="flex-shrink-0 mx-8 flex flex-col items-center justify-center"
-            >
-              <div className="text-6xl mb-2">
-                <Image
-                  src={tech.logo}
-                  alt={tech.name}
-                  width={100}
-                  height={100}
-                  className="object-contain"
-                />
-              </div>
-              <span className="text-sm font-medium text-muted-foreground">
-                {tech.name}
-              </span>
-            </div>
-          ))}
-        </div>
-
-        <div className="flex flex-wrap justify-center gap-5">
-          {frameworks.map((tech, index) => (
-            <div
-              key={`first-${index}`}
-              className="flex-shrink-0 mx-8 flex flex-col items-center justify-center min-w-[120px]"
-            >
-              <div className="text-6xl mb-2">
-                <Image
-                  src={tech.logo}
-                  alt={tech.name}
-                  width={100}
-                  height={100}
-                  className="object-contain"
-                />
-              </div>
-              <span className="text-sm font-medium text-muted-foreground">
-                {tech.name}
-              </span>
-            </div>
-          ))}
-        </div>
-
-        <div className="flex flex-wrap justify-center gap-5">
-          {databases.map((tech, index) => (
-            <div
-              key={`first-${index}`}
-              className="flex-shrink-0 mx-8 flex flex-col items-center justify-center min-w-[120px]"
-            >
-              <div className="text-6xl mb-2">
-                <Image
-                  src={tech.logo}
-                  alt={tech.name}
-                  width={100}
-                  height={100}
-                  className="object-contain"
-                />
-              </div>
-              <span className="text-sm font-medium text-muted-foreground">
-                {tech.name}
-              </span>
-            </div>
-          ))}
-        </div>
-
-        <div className="flex flex-wrap justify-center gap-5">
-          {cloudProviders.map((tech, index) => (
-            <div
-              key={`first-${index}`}
-              className="flex-shrink-0 mx-8 flex flex-col items-center justify-center min-w-[120px]"
-            >
-              <div className="text-6xl mb-2">
-                <Image
-                  src={tech.logo}
-                  alt={tech.name}
-                  width={100}
-                  height={100}
-                  className="object-contain"
-                />
-              </div>
-              <span className="text-sm font-medium text-muted-foreground">
-                {tech.name}
-              </span>
-            </div>
-          ))}
-        </div>
+        <TechStack items={programmingLanguages} />
+        <TechStack items={frameworks} />
+        <TechStack items={databases} />
+        <TechStack items={cloudProviders} />
       </div>
 
       {/* <style jsx>{`
