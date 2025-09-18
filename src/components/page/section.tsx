@@ -7,6 +7,7 @@ interface SectionProps {
   className?: string;
   title?: ReactNode;
   description?: ReactNode;
+  titleLocation?: 'center' | 'left' | 'right';
 }
 
 export default function Section({
@@ -15,6 +16,7 @@ export default function Section({
   className = '',
   title,
   description,
+  titleLocation = 'center',
 }: SectionProps) {
   return (
     <section

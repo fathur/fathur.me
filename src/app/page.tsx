@@ -14,6 +14,7 @@ import Timelines from '@/components/page/timelines';
 import Portfolio from '@/components/page/portfolio';
 import HighLevelSkills from '@/components/page/high-skills';
 import WhoAmI from '@/components/page/who-am-i';
+import TechStacks from '@/components/page/tech-stacks';
 
 export default function Home() {
   return (
@@ -142,15 +143,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About Section */}
       <WhoAmI />
 
       <HighLevelSkills />
 
-      {/* Portfolio Section */}
+      <TechStacks />
+
       <Portfolio />
 
-      {/* Work Experience Section */}
       <Timelines />
 
       {/* Skills Section */}
