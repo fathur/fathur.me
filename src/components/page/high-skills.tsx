@@ -1,10 +1,4 @@
-import {
-  CodeIcon,
-  DatabaseIcon,
-  UsersIcon,
-  ZapIcon,
-  ShieldIcon,
-} from 'lucide-react';
+import { Network, Users, Rocket, MessageSquare, Brain } from 'lucide-react';
 import Section from './section';
 
 interface Skill {
@@ -23,7 +17,7 @@ interface SkillCategory {
 const skillCategories: SkillCategory[] = [
   {
     title: 'System Design and Architecture',
-    icon: CodeIcon,
+    icon: Network,
     color: 'text-blue-500',
     description:
       'Designs robust, scalable architectures. Selects technologies, defines interfaces, and integrates distributed systems to meet business needs.',
@@ -37,7 +31,7 @@ const skillCategories: SkillCategory[] = [
   },
   {
     title: 'Agile Collaboration and Leadership',
-    icon: DatabaseIcon,
+    icon: Users,
     color: 'text-green-500',
     description:
       'Leads agile teams, drives collaboration, manages timelines, and ensures technical and business alignment for high-quality software delivery.',
@@ -51,7 +45,7 @@ const skillCategories: SkillCategory[] = [
   },
   {
     title: 'Scalable and Secure Software Delivery',
-    icon: UsersIcon,
+    icon: Rocket,
     color: 'text-purple-500',
     description:
       'Delivers scalable, secure software with high availability. Implements best practices for pipelines, compliance, and continuous improvement.',
@@ -65,7 +59,7 @@ const skillCategories: SkillCategory[] = [
   },
   {
     title: 'Cross-functional Communication',
-    icon: ZapIcon,
+    icon: MessageSquare,
     color: 'text-orange-500',
     description:
       'Facilitates clear communication between technical and non-technical teams, translating complex concepts and ensuring project-wide alignment.',
@@ -79,7 +73,7 @@ const skillCategories: SkillCategory[] = [
   },
   {
     title: 'Problem Solving and Annalytical Thinking',
-    icon: ShieldIcon,
+    icon: Brain,
     color: 'text-red-500',
     description:
       'Analyzes complex problems, identifies root causes, and delivers effective, data-driven solutions with logical reasoning and continuous improvement.',

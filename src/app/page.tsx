@@ -1,8 +1,5 @@
 import {
   CodeIcon,
-  DatabaseIcon,
-  ServerIcon,
-  CogIcon,
   GlobeIcon,
   LinkedinIcon,
   MailIcon,
