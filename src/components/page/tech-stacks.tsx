@@ -31,7 +31,7 @@ const databases = [
 
   // { name: "SQL Server", logo: "/images/logo/postgresql.png" },
   { name: 'MongoDB', logo: '/images/logo/mongodb.png' },
-  { name: 'DynamoDB', logo: '/images/logo/dynamodb.png' },
+  // { name: 'DynamoDB', logo: '/images/logo/dynamodb.png' },
   { name: 'Redis', logo: '/images/logo/redis.png' },
 ];
 
@@ -55,15 +55,15 @@ export default function TechStacks() {
       title="Tech Stacks"
       description="My comprehensive toolkit for building robust backend systems"
     >
-      <div className="relative overflow-hidden">
+      <div className="flex flex-col gap-10">
         {/* <div className="absolute left-0 top-0 w-20 h-full bg-gradient-to-r from-background to-transparent z-10"></div> */}
         {/* <div className="absolute right-0 top-0 w-20 h-full bg-gradient-to-l from-background to-transparent z-10"></div> */}
 
-        <div className="flex justify-center">
+        <div className="flex flex-wrap justify-center gap-5">
           {programmingLanguages.map((tech, index) => (
             <div
               key={`first-${index}`}
-              className="flex-shrink-0 mx-8 flex flex-col items-center justify-center min-w-[120px]"
+              className="flex-shrink-0 mx-8 flex flex-col items-center justify-center"
             >
               <div className="text-6xl mb-2">
                 <Image
@@ -81,7 +81,7 @@ export default function TechStacks() {
           ))}
         </div>
 
-        <div className="flex justify-center mt-10">
+        <div className="flex flex-wrap justify-center gap-5">
           {frameworks.map((tech, index) => (
             <div
               key={`first-${index}`}
@@ -103,7 +103,7 @@ export default function TechStacks() {
           ))}
         </div>
 
-        <div className="flex mt-10 justify-center">
+        <div className="flex flex-wrap justify-center gap-5">
           {databases.map((tech, index) => (
             <div
               key={`first-${index}`}
@@ -125,7 +125,7 @@ export default function TechStacks() {
           ))}
         </div>
 
-        <div className="flex justify-center mt-10">
+        <div className="flex flex-wrap justify-center gap-5">
           {cloudProviders.map((tech, index) => (
             <div
               key={`first-${index}`}
