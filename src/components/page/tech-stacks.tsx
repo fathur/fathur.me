@@ -91,7 +91,12 @@ export default function TechStacks() {
       id="tech-stacks"
       className="bg-secondary/20"
       title="Tech Stacks"
-      description="My comprehensive toolkit for building robust backend systems"
+      description={
+        <span>
+          My comprehensive toolkit <br />
+          for building robust backend systems and frontend applications
+        </span>
+      }
     >
       <div className="flex flex-col gap-10">
         {/* <div className="absolute left-0 top-0 w-20 h-full bg-gradient-to-r from-background to-transparent z-10"></div> */}

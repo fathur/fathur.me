@@ -20,10 +20,11 @@ export default function WhoAmI() {
       <div className="grid md:grid-cols-2 gap-12 items-center">
         <div>
           <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-            Hey there! I&apos;m Fathur, a passionate backend engineer who loves
-            building things that scale. With over 10+ years of experience
-            crafting robust microservices and APIs, I&apos;ve helped multiple
-            startups and companies to build their products and services.
+            Hey there! I&apos;m Fathur, a passionate full-stack engineer who
+            loves building things that scale. With over 10+ years of experience
+            crafting robust microservices, APIs, and modern frontend
+            applications, I&apos;ve helped multiple startups and companies to
+            build their products and services from the ground up.
           </p>
           <p className="text-lg text-muted-foreground leading-relaxed mb-8">
             Whether you&apos;re a growing startup needing a solid backend

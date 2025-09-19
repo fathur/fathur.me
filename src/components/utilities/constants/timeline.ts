@@ -136,7 +136,7 @@ export const TimelineData = [
     company: 'JULO',
     beginDate: new Date('2021-11-01'),
     // endDate: new Date('2025-03-01'),
-    employmentType: EmploymentType.CONTRACT,
+    employmentType: EmploymentType.FULLTIME,
     employmentLocation: EmploymentLocation.REMOTE,
     description:
       "Design and implement backend development for JULO's comprehensive onboarding system, enabling seamless customer acquisition and loan eligibility assessment. Architected and maintained microservices using Django and Go to handle critical fintech operations including credit scoring, KYC verification, and document processing. Collaborated with cross-functional teams of 10+ members across frontend, data, and product departments to deliver scalable solutions that process thousands of loan applications daily.",
