@@ -30,6 +30,9 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: 'Fathur' }],
   creator: 'Fathur',
+  alternates: {
+    canonical: 'https://fathur.me',
+  },
 };
 
 export default function RootLayout({
