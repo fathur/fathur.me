@@ -1,6 +1,7 @@
 import { PortfolioData } from '@/components/utilities/constants/portfolio';
 import Section from './section';
-import { GlobeIcon } from 'lucide-react';
+import { GlobeIcon, ArrowRightIcon } from 'lucide-react';
+import Link from 'next/link';
 
 export default function Portfolio() {
   return (
@@ -15,12 +16,12 @@ export default function Portfolio() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {PortfolioData.filter(project => project.show).map(
+        <div className="flex flex-wrap justify-center gap-8">
+          {PortfolioData.filter(project => project.show).slice(0, 4).map(
             (project, index) => (
               <div
                 key={index}
-                className="group bg-background rounded-2xl overflow-hidden border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg"
+                className="w-full sm:w-[calc(50%-16px)] lg:w-[calc(25%-24px)] group bg-background rounded-2xl overflow-hidden border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg"
               >
                 <div className="aspect-video bg-gradient-to-br from-purple-500 to-pink-600 relative overflow-hidden">
                   <img
@@ -66,6 +67,17 @@ export default function Portfolio() {
               </div>
             )
           )}
+        </div>
+
+        {/* View All Link */}
+        <div className="text-center mt-12">
+          <Link
+            href="/portfolio"
+            className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-semibold transition-colors"
+          >
+            and many more
+            <ArrowRightIcon className="h-4 w-4" />
+          </Link>
         </div>
       </div>
     </Section>

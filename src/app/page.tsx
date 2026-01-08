@@ -12,6 +12,8 @@ import Portfolio from '@/components/page/portfolio';
 import HighLevelSkills from '@/components/page/high-skills';
 import WhoAmI from '@/components/page/who-am-i';
 import TechStacks from '@/components/page/tech-stacks';
+import Hero from '@/components/page/hero';
+import ServicesOffered from '@/components/page/services-offered';
 
 export default function Home() {
   return (
@@ -63,86 +65,13 @@ export default function Home() {
         </div> */}
       {/* </section> */}
 
-      {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 relative overflow-hidden">
-        {/* Background Pattern */}
-        <div className="absolute inset-0 hero-pattern">
-          <svg
-            className="w-full h-full"
-            xmlns="http://www.w3.org/2000/svg"
-            width="100"
-            height="100"
-            viewBox="0 0 100 100"
-          >
-            <g fill="currentColor" fillRule="evenodd">
-              <path d="M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z" />
-            </g>
-          </svg>
-        </div>
-
-        <div className="max-w-7xl mx-auto relative z-10">
-          {/* Three Column Layout */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-8 items-center">
-            {/* Left Column - Frontend */}
-            <div className="text-center order-1 md:order-1">
-              <div className="mb-4">
-                <div className="mb-5 text-3xl sm:text-4xl lg:text-5xl font-bold text-muted-foreground/60">
-                  &lt; frontend &gt;
-                </div>
-                <p className="text-lg lg:text-xl max-w-2xl mx-auto leading-relaxed mb-8 font-semibold text-muted-foreground/50">
-                  Love to write clean, beautiful and elegant code for the web
-                </p>
-              </div>
-            </div>
-
-            {/* Middle Column - Fathur Rohman */}
-            <div className="text-center order-1 md:order-2">
-              <h1 className="text-5xl md:text-6xl lg:text-8xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 via-pink-500 to-cyan-400 bg-clip-text text-transparent animate-gradient mb-6">
-                Fathur Rohman
-              </h1>
-              {/* <div className="inline-flex items-center px-6 py-3 rounded-full bg-primary/10 text-primary text-lg font-medium mb-8">
-                <ServerIcon className="h-5 w-5 mr-2" />
-                Backend Engineer
-              </div> */}
-              {/* <p className="text-lg lg:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-8">
-                Experienced backend engineer crafting scalable, high-performance applications with modern technologies and best practices.
-              </p> */}
-
-              {/* <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <a
-                  href="#contact"
-                  className="inline-flex items-center px-8 py-4 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors"
-                >
-                  <MailIcon className="h-5 w-5 mr-2" />
-                  Get In Touch
-                </a>
-                <a
-                  href="#skills"
-                  className="inline-flex items-center px-8 py-4 border border-border text-foreground rounded-lg font-semibold hover:bg-secondary transition-colors"
-                >
-                  View My Skills
-                </a>
-              </div> */}
-            </div>
-
-            {/* Right Column - Backend */}
-            <div className="text-center order-3 md:order-3">
-              <div className="mb-4">
-                <div className="mb-5 text-3xl sm:text-4xl lg:text-5xl font-bold text-muted-foreground/60">
-                  {'{'} backend {'}'}
-                </div>
-                <p className="text-lg lg:text-xl max-w-2xl mx-auto leading-relaxed mb-8 font-semibold text-muted-foreground/50">
-                  Expertise in building scalable web applications and APIs
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Hero />
 
       <WhoAmI />
 
       <HighLevelSkills />
+
+      <ServicesOffered />
 
       <TechStacks />
 

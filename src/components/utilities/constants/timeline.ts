@@ -135,7 +135,7 @@ export const TimelineData = [
     position: 'Senior Backend Engineer',
     company: 'JULO',
     beginDate: new Date('2021-11-01'),
-    // endDate: new Date('2025-03-01'),
+    endDate: new Date('2026-01-01'),
     employmentType: EmploymentType.FULLTIME,
     employmentLocation: EmploymentLocation.REMOTE,
     description:
