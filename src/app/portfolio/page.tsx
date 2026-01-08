@@ -1,12 +1,12 @@
 'use client';
 
-import { useMemo } from 'react';
+import { Suspense, useMemo } from 'react';
 import { useSearchParams, useRouter, usePathname } from 'next/navigation';
 import { PortfolioData } from '@/components/utilities/constants/portfolio';
 import { GlobeIcon, ArrowLeftIcon } from 'lucide-react';
 import Link from 'next/link';
 
-export default function PortfolioPage() {
+function PortfolioContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const pathname = usePathname();
@@ -143,6 +143,33 @@ export default function PortfolioPage() {
                 </div>
               )
             )}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default function PortfolioPage() {
+  return (
+    <Suspense fallback={<PortfolioLoading />}>
+      <PortfolioContent />
+    </Suspense>
+  );
+}
+
+function PortfolioLoading() {
+  return (
+    <div className="min-h-screen bg-background text-foreground">
+      <div className="py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h1 className="text-4xl sm:text-5xl font-bold mb-4">
+              All Projects
+            </h1>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Loading...
+            </p>
           </div>
         </div>
       </div>
